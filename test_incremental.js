@@ -1,10 +1,19 @@
 var money = 0;
+var guests = 0;
 
-
-//button click to make money
+//general function to increase money
 function incrementMoney(incrementVal) {
     money += incrementVal;
     document.getElementById("moneyCount").innerHTML = money;
+}
+
+function incrementGuests(incrementVal) {
+    guests += incrementVal;
+    document.getElementById("guestCount").innerHTML = guests;
+}
+
+function hiddenClick() {
+    
 }
 
 //game loop
