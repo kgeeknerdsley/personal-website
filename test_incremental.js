@@ -16,7 +16,14 @@ function hiddenClick() {
     
 }
 
+var button1 = document.getElementById("sneakyButton").style.display;
+button1 = "none";
+
 //game loop
 window.setInterval(function() {
     incrementMoney(1);
+
+    if(money >= 30) {
+        button1 = "block";
+    }
 },1000);
