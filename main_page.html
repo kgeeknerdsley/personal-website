@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <head>
     <header>
         <h1>
@@ -8,15 +10,21 @@
 </head>
 
 <body>
-    <label>Button test:</label>
-    <button onclick="incrementMoney(1)">Work</button>
-    <br />
-    Money: <span id="moneyCount">0</span>
-    <br>
-    Guests: <span id = "guestCount">0</span>
-    <br>
+    <section id ="buttons">
+        <button onclick="incrementMoney(1)">Work</button>
+        <button id = "sneakyButton" onclick="hiddenClick()">Peek a boo</button>
+    </section>
 
-    <button id="sneakyButton" onclick="hiddenClick()">Peek a boo</button>
+    <div>
+        <button id = "sneakyButtonDiv" onclick="hiddenClick()">Hiding in a div</button>
+    </div>
+
+    <section id = "stats">
+        <br>
+        Money: <span id="moneyCount">0</span>
+        <br>
+        Guests: <span id = "guestCount">0</span>
+    </section>
 
     <script type="text/javascript" src="test_incremental.js"></script>
 </body>

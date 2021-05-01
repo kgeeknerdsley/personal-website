@@ -1,6 +1,8 @@
 var money = 0;
 var guests = 0;
 
+document.getElementById("sneakyButtonDiv").style.display = "none";
+
 //general function to increase money
 function incrementMoney(incrementVal) {
     money += incrementVal;
@@ -13,17 +15,14 @@ function incrementGuests(incrementVal) {
 }
 
 function hiddenClick() {
-    
+    window.alert("You found me!");
 }
-
-var button1 = document.getElementById("sneakyButton").style.display;
-button1 = "none";
 
 //game loop
 window.setInterval(function() {
     incrementMoney(1);
 
     if(money >= 30) {
-        button1 = "block";
+        document.getElementById("sneakyButtonDiv").style.display = "block";
     }
 },1000);
